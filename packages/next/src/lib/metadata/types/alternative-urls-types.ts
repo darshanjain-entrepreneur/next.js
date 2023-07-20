@@ -413,11 +413,11 @@ type LangCode =
   | 'zh-SG'
   | 'zh-TW'
   | 'zu-ZA'
-  |  string
+ 
 
 type UnmatchedLang = 'x-default'
 
-type HrefLang = LangCode | UnmatchedLang
+type HrefLang = LangCode | UnmatchedLang | string
 
 type Languages<T> = {
   [s in HrefLang]?: T
